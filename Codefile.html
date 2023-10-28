@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Testfile</title>
+  </head>
+  <body>
+    <h2>The download Attribute/download button</h2>
+    <img src="Image (10).jpg" alt="image" width="20%" height="30%" />
+    <br />
+    <br />
+    <a id="myAnchor" href="Image (10).jpg" download="image">
+      <button>Download Image</button>
+    </a>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("myAnchor").download = "newValue";
+      document.getElementById("demo").innerHTML =
+        document.getElementById("myAnchor").download;
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>The download Attribute/download button</h2>
+    <img
+      src="B.Sc. certificate.jpg"
+      alt="image"
+      width="20%"
+      height="40%"
+    /><br />
+    <br />
+    <a id="myAnchor" href="B.Sc. certificate.jpg" download="image">
+      <button>Download Certificate</button>
+    </a>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("myAnchor").download = "newValue";
+      document.getElementById("demo").innerHTML =
+        document.getElementById("myAnchor").download;
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>A demonstration of how to access an Input Button</h3>
+    <p>Click the button to get the text that is displayed on the button.</p>
+    <input type="button" id="myBtn" onclick="myFunction()" value="click here" />
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x = document.createElement("INPUT");
+        x.setAttribute("type", "button");
+        x.setAttribute("value", "Copy");
+        document.body.appendChild(x);
+      }
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>Create an a Element</h2>
+    <button onclick="myFunction()">Try it</button>
+    <p>Click "Try it" to create an a element.</p>
+    <script>
+      function myFunction() {
+        const x = document.createElement("A");
+        const t = document.createTextNode("Login");
+        x.setAttribute("href", "https://www.w3schools.com");
+        x.appendChild(t);
+        document.body.appendChild(x);
+      }
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
