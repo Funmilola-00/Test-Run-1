@@ -1,0 +1,27 @@
+
+.parent {
+    width: 95%;
+    height: 85%;
+    outline: 20px solid pink;
+    display: grid;
+    grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+    grid-auto-rows: 80px auto 100px;
+    margin: 30px;
+    margin-top: 55px;
+    grid-template-areas: 
+    "header header header"
+    "main main side-bar"
+    "footer footer footer"
+}
+
+.head {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.Footer {
+    grid-area: footer;
+}
+
+
